@@ -1,0 +1,1 @@
+app.controller("LoginController",function(o,n){o.logar=function(){"admin"===o.login&&"admin"===o.senha?n.url("/produtos"):console.log("não")}});
