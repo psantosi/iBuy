@@ -1,0 +1,45 @@
+.detalhes {
+  padding: 50px 0; }
+  .detalhes .descricao {
+    float: left;
+    width: 100%; }
+    .detalhes .descricao .nome {
+      font-family: 'Lobster', cursive;
+      color: #4a4a4a;
+      font-size: 2.857em;
+      margin-bottom: 35px; }
+    .detalhes .descricao .descricao-produto {
+      font-size: 1.000em;
+      color: #999; }
+    .detalhes .descricao .preco {
+      color: #ff0045;
+      font-weight: 700;
+      font-size: 35px;
+      margin-top: 27px;
+      float: left; }
+    .detalhes .descricao .frete {
+      color: #73c9ca;
+      font-weight: 700;
+      vertical-align: top;
+      margin-top: 13px;
+      border: 3px dashed #73c9ca;
+      padding: 10px;
+      float: right;
+      margin-right: 10px; }
+  .detalhes .quantidade {
+    width: 100%;
+    float: left; }
+    .detalhes .quantidade input {
+      border-radius: 6px;
+      padding-left: 10px; }
+  .detalhes button {
+    color: #fff;
+    border: 0;
+    background: #73c9ca;
+    font-size: 0.857em;
+    font-weight: 700;
+    padding: 10px 45px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px #000;
+    margin-top: 20px;
+    float: left; }

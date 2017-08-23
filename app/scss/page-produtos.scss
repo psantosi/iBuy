@@ -1,0 +1,170 @@
+.destaques {
+
+    .menu {
+        color: #4a4a4a;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+
+        @media (min-width: 991px){
+            margin-top: 50px;
+        }
+        .navbar-toggle {
+            float: none;
+        }
+
+        li {
+            background: #f8f8f8;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 2px solid #73c9ca;
+            margin-right: 5px;
+            span {
+                margin-right: 10px;
+            }
+
+            &.active {
+                color: #73c9ca;
+            }
+
+            @media (min-width: 991px){
+                width: 100%;
+                border-top: 0;
+                border-left: 0;
+                margin-right: 0;
+            }
+        }       
+    }
+
+    .carrinho {
+         float: right;
+         position: relative;
+
+        .btn-carrinho {
+            background: #4a4a4a;
+            color: #fff;
+            font-family: 'Lobster', cursive;
+            float: right;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 1.286em;
+            margin-bottom: 0;
+            cursor: pointer;
+
+            span {
+                margin-right: 10px;
+            }
+
+            @media (min-width: 991px){
+                border-radius: 0 0 6px 6px;
+            }
+        }
+    }
+
+    .lista-carrinho {
+        height: 0;
+        float: right;
+        width: 300px;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        
+        .box {
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            float: left;
+            width: 100%;
+            border-radius: 5px;
+            background: #f8f8f8;
+            padding-bottom: 15px;
+        }
+        .item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            &:last-child {
+                border: 0;
+            }
+
+            img {
+                width: 40px;
+                border-radius: 50%;
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .desc {
+                display: inline-block;
+            }
+
+            .nome {
+                font-family: 'Lobster', cursive;
+                font-size: 1.000em;
+                margin-bottom: 0;
+                
+            }
+            .qtd {
+                font-size: 1.000em;
+                margin-bottom: 0;
+            }
+            .fechar {
+                color: #4a4a4a;
+                float: right;
+                margin-right: 15px;
+                margin-top: 12px;
+                text-decoration: none;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+
+        .total {
+             margin: 14px 0;
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        button {
+            color: #fff;
+            border: 0;
+            background: #73c9ca;
+            font-size: 1.000em;
+            font-weight: 700;
+            display: inline;
+            padding: 10px 25px;
+            border-radius: 6px;
+            box-shadow: 0px 1px 1px #000;
+        }
+    }
+
+    h2 {
+        font-family: 'Lobster', cursive;
+        color: #4a4a4a;
+        margin: 0 0 35px;
+        font-size: 30px;
+        width: 100%;
+        @media (min-width: 991px){
+            margin-top: 50px;
+        }
+    }
+
+    .search {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-bottom: 30px;
+    }
+
+    produto {
+        @media (max-width: 440px){
+            width: 100%;
+        }
+    }
+    
+} 

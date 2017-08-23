@@ -1,0 +1,37 @@
+.finalizar .title {
+  text-align: center;
+  color: #73c9ca;
+  font-weight: 700;
+  font-size: 2.714em;
+  margin-top: 35px;
+  margin-bottom: 30px; }
+  @media (min-width: 601px) {
+    .finalizar .title {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      font-size: 3.571em; } }
+
+.finalizar .listaProdutos table {
+  width: 100%;
+  color: #4a4a4a; }
+  .finalizar .listaProdutos table tr {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 50px; }
+  .finalizar .listaProdutos table th {
+    font-family: 'Lobster', cursive;
+    font-size: 1.286em;
+    vertical-align: middle; }
+  .finalizar .listaProdutos table td {
+    vertical-align: middle; }
+  .finalizar .listaProdutos table .img-produto {
+    width: 40px;
+    border-radius: 50%; }
+
+.finalizar .comprar-mais {
+  font-size: 1.286em;
+  color: #ff0045;
+  text-align: center;
+  display: block;
+  margin-top: 35px;
+  cursor: pointer; }

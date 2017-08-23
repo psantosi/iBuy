@@ -1,0 +1,54 @@
+.finalizar {
+    .title {
+        text-align: center;
+        color: #73c9ca;
+        font-weight: 700;
+        font-size: 2.714em;
+        margin-top: 35px;
+        margin-bottom: 30px;
+
+        @media (min-width: 601px){
+            margin-top: 100px;
+            margin-bottom: 50px;
+            font-size: 3.571em;
+        }
+    }
+
+    .listaProdutos {
+        table {
+            width: 100%;
+            color: #4a4a4a;
+            
+
+            tr {
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                height: 50px;
+            }
+
+            th {
+                font-family: 'Lobster', cursive;
+                font-size: 1.286em;
+                vertical-align: middle;
+            }
+
+            td {
+                vertical-align: middle;
+            }
+
+            .img-produto {
+                width: 40px; 
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .comprar-mais {
+        font-size: 1.286em;
+        color: #ff0045;
+        text-align: center;
+        display: block;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+}
