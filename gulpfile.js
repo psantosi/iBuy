@@ -7,6 +7,8 @@ var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
 
 // tasks
 gulp.task('clean', function() {
@@ -32,11 +34,26 @@ gulp.task('copy-html-files', function () {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('serve', ['sass'], function() {
 
-// default task
-gulp.task('default',
-  ['lint', 'connect']
-);
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/templates/*.html").on('change', browserSync.reload);
+});
+
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+    return gulp.src("app/scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("app/css"))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', ['serve']);
+
 gulp.task('build', function() {
   runSequence(
     ['clean'],

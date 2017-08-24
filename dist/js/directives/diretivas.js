@@ -1,1 +1,0 @@
-angular.module("diretivas",[]).directive("meuHeader",function(){return{restrict:"AE",templateUrl:"js/directives/header.html"}}).directive("meuFooter",function(){return{restrict:"AE",templateUrl:"js/directives/footer.html"}}).directive("produto",function(){return{restrict:"AE",templateUrl:"js/directives/produto.html"}});
