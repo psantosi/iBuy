@@ -1,5 +1,5 @@
 var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
-    .config(['routeProvider', 'locationProvider', function($routeProvider, $locationProvider){
+    .config(['routeProvider', 'locationProvider', 'BASE_HREF', function($routeProvider, $locationProvider, BASE_HREF){
         // $locationProvider.html5Mode(true);
 
         $routeProvider.when('/login', {

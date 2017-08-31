@@ -1,5 +1,5 @@
 angular.module('diretivas', [])
-    .directive('meuHeader', ['BASE_HREF', function() {
+    .directive('meuHeader', ['BASE_HREF', function(BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
@@ -8,7 +8,7 @@ angular.module('diretivas', [])
 
         return ddo;
     }])
-    .directive('meuFooter', ['BASE_HREF', function() {
+    .directive('meuFooter', ['BASE_HREF', function(BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
@@ -17,7 +17,7 @@ angular.module('diretivas', [])
 
         return ddo;
     }])
-    .directive('produto', ['BASE_HREF', function() {
+    .directive('produto', ['BASE_HREF', function(BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
