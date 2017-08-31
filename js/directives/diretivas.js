@@ -1,27 +1,27 @@
 angular.module('diretivas', [])
-    .directive('meuHeader', ['BASE_HREF', function(BASE_HREF) {
+    .directive('meuHeader', ['BASE_HREF', function (BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/header.html'
+            templateUrl: BASE_HREF + '/js/directives/header.html'
         };
 
         return ddo;
     }])
-    .directive('meuFooter', ['BASE_HREF', function(BASE_HREF) {
+    .directive('meuFooter', ['BASE_HREF', function (BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/footer.html'
+            templateUrl: BASE_HREF + '/js/directives/footer.html'
         };
 
         return ddo;
     }])
-    .directive('produto', ['BASE_HREF', function(BASE_HREF) {
+    .directive('produto', ['BASE_HREF', function (BASE_HREF) {
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/produto.html'
+            templateUrl: BASE_HREF + '/js/directives/produto.html'
         };
 
         return ddo;
