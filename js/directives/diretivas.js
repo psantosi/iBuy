@@ -1,1 +1,28 @@
-angular.module("diretivas",[]).directive("meuHeader",function(){return{restrict:"AE",templateUrl:"js/directives/header.html"}}).directive("meuFooter",function(){return{restrict:"AE",templateUrl:"js/directives/footer.html"}}).directive("produto",function(){return{restrict:"AE",templateUrl:"js/directives/produto.html"}});
+angular.module('diretivas', [])
+    .directive('meuHeader', function() {
+
+        var ddo = {
+            restrict: 'AE',
+            templateUrl: 'js/directives/header.html'
+        };
+
+        return ddo;
+    })
+    .directive('meuFooter', function() {
+
+        var ddo = {
+            restrict: 'AE',
+            templateUrl: 'js/directives/footer.html'
+        };
+
+        return ddo;
+    })
+    .directive('produto', function() {
+
+        var ddo = {
+            restrict: 'AE',
+            templateUrl: 'js/directives/produto.html'
+        };
+
+        return ddo;
+    });
