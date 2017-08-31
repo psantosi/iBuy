@@ -1,5 +1,5 @@
 var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
-    .config(function($routeProvider, $locationProvider){
+    .config(['routeProvider', 'locationProvider', function($routeProvider, $locationProvider){
         // $locationProvider.html5Mode(true);
 
         $routeProvider.when('/login', {
@@ -18,4 +18,4 @@ var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
         });
 
         $routeProvider.otherwise({redirectTo: '/login'});
-    });
+    }]);

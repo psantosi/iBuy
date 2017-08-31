@@ -1,4 +1,4 @@
-app.controller('LoginController', function($scope, $location, ngDialog) {
+app.controller('LoginController', ['$scope', '$location', 'ngDialog', function($scope, $location, ngDialog) {
 
     $scope.logar = function() {
 
@@ -13,4 +13,4 @@ app.controller('LoginController', function($scope, $location, ngDialog) {
             });
         }
     }
-});
+}]);

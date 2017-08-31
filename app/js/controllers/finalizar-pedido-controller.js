@@ -1,4 +1,4 @@
-app.controller('FinalizarPedidoCotroller', function($scope, $location) {
+app.controller('FinalizarPedidoCotroller', ['$scope', '$location', function($scope, $location) {
 
 
     $scope.valorTotal = 0;
@@ -80,4 +80,4 @@ app.controller('FinalizarPedidoCotroller', function($scope, $location) {
         $location.path('/produtos');
     }
 
-});
+}]);

@@ -1,4 +1,4 @@
-app.controller('ProdutosController', function($scope, ngDialog, $location) {
+app.controller('ProdutosController', ['$scope', 'ngDialog', '$location', function($scope, ngDialog, $location) {
 
     $scope.buscar = '';
     $scope.carrinho = [];
@@ -143,4 +143,4 @@ app.controller('ProdutosController', function($scope, ngDialog, $location) {
         $location.path('/finalizar-pedido');
     }
 
-});
+}]);
