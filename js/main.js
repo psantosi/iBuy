@@ -1,1 +1,21 @@
-var app=angular.module("ibuy",["ngRoute","diretivas","ngDialog"]).config(["$routeProvider","$locationProvider","BASE_HREF",function(o,e,l){o.when("/login",{templateUrl:l+"/templates/login.html",controller:"LoginController"}),o.when("/produtos",{templateUrl:l+"/templates/produtos.html",controller:"ProdutosController"}),o.when("/finalizar-pedido",{templateUrl:l+"/templates/finalizar-pedido.html",controller:"FinalizarPedidoCotroller"}),o.otherwise({redirectTo:"/login"})}]).constrant("BASE_HREF","/iBuy");
+var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
+  .config(['$routeProvider', '$locationProvider', 'BASE_HREF', function ($routeProvider, $locationProvider, BASE_HREF) {
+
+    $routeProvider.when('/login', {
+      templateUrl: BASE_HREF + '/templates/login.html',
+      controller: 'LoginController'
+    });
+
+    $routeProvider.when('/produtos', {
+      templateUrl: BASE_HREF + '/templates/produtos.html',
+      controller: 'ProdutosController'
+    });
+
+    $routeProvider.when('/finalizar-pedido', {
+      templateUrl: BASE_HREF + '/templates/finalizar-pedido.html',
+      controller: 'FinalizarPedidoCotroller'
+    });
+
+    $routeProvider.otherwise({ redirectTo: '/login' });
+  }])
+  .constrant('BASE_HREF', '/iBuy');
