@@ -1,21 +1,21 @@
 var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
-    .config(['routeProvider', 'locationProvider', function($routeProvider, $locationProvider){
-        // $locationProvider.html5Mode(true);
+  .config(['$routeProvider', '$locationProvider', 'BASE_HREF', function ($routeProvider, $locationProvider, BASE_HREF) {
 
-        $routeProvider.when('/login', {
-            templateUrl: 'templates/login.html',
-            controller: 'LoginController'
-        });
+    $routeProvider.when('/login', {
+      templateUrl: BASE_HREF + '/templates/login.html',
+      controller: 'LoginController'
+    });
 
-         $routeProvider.when('/produtos', {
-            templateUrl: 'templates/produtos.html',
-            controller: 'ProdutosController'
-        });
+    $routeProvider.when('/produtos', {
+      templateUrl: BASE_HREF + '/templates/produtos.html',
+      controller: 'ProdutosController'
+    });
 
-        $routeProvider.when('/finalizar-pedido', {
-            templateUrl: 'templates/finalizar-pedido.html',
-            controller: 'FinalizarPedidoCotroller'
-        });
+    $routeProvider.when('/finalizar-pedido', {
+      templateUrl: BASE_HREF + '/templates/finalizar-pedido.html',
+      controller: 'FinalizarPedidoCotroller'
+    });
 
-        $routeProvider.otherwise({redirectTo: '/login'});
-    }]);
+    $routeProvider.otherwise({ redirectTo: '/login' });
+  }])
+    .constant('BASE_HREF', '/iBuy');

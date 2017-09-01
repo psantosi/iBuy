@@ -23,10 +23,7 @@ gulp.task('minify-css', function() {
 });
 gulp.task('minify-js', function() {
   gulp.src(['./app/**/*.js'])
-    .pipe(uglify({
-      // inSourceMap:
-      // outSourceMap: "app.js.map"
-    }))
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/'))
 });
 gulp.task('copy-html-files', function () {
