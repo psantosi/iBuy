@@ -1,16 +1,1 @@
-app.controller('LoginController', ['$scope', '$location', 'ngDialog', function($scope, $location, ngDialog) {
-
-    $scope.logar = function() {
-
-        if ($scope.login === 'admin' && $scope.senha === 'admin') {
-            $location.url('/produtos')
-        } else {
-            $scope.mensagem = 'Usuario ou senha incorreta';
-            ngDialog.open({ 
-                template: '/templates/mensagem.html',
-                className: 'ngdialog-theme-default mensagem-box',
-                scope: $scope
-            });
-        }
-    }
-}]);
+app.controller("LoginController",["$scope","$location","ngDialog",function(e,o,n){e.logar=function(){"admin"===e.login&&"admin"===e.senha?o.url("/produtos"):(e.mensagem="Usuario ou senha incorreta",n.open({template:"/templates/mensagem.html",className:"ngdialog-theme-default mensagem-box",scope:e}))}}]);
