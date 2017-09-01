@@ -18,4 +18,4 @@ var app = angular.module('ibuy', ['ngRoute', 'diretivas', 'ngDialog'])
 
     $routeProvider.otherwise({ redirectTo: '/login' });
   }])
-  .constrant('BASE_HREF', '/iBuy');
+    .constant('BASE_HREF', '/iBuy');

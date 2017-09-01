@@ -1,4 +1,4 @@
-app.controller('ProdutosController', ['$scope', 'ngDialog', '$location', 'BASE_HREF', function($scope, ngDialog, $location, BASE_HREF) {
+app.controller('ProdutosController', ['$scope', 'ngDialog', '$location', function($scope, ngDialog, $location) {
 
     $scope.buscar = '';
     $scope.carrinho = [];
@@ -92,7 +92,7 @@ app.controller('ProdutosController', ['$scope', 'ngDialog', '$location', 'BASE_H
 
         $scope.produto = produto;
         ngDialog.open({ 
-            template: BASE_HREF + '/templates/detalhe-produto.html',
+            template: '/templates/detalhe-produto.html',
             className: 'ngdialog-theme-default',
             scope: $scope
         });

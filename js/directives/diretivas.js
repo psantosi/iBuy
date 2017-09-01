@@ -3,7 +3,7 @@ angular.module('diretivas', [])
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/header.html'
+            templateUrl: BASE_HREF + '/js/directives/header.html'
         };
 
         return ddo;
@@ -12,7 +12,7 @@ angular.module('diretivas', [])
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/footer.html'
+            templateUrl: BASE_HREF + '/js/directives/footer.html'
         };
 
         return ddo;
@@ -21,7 +21,7 @@ angular.module('diretivas', [])
 
         var ddo = {
             restrict: 'AE',
-            templateUrl: BASE_HREF + 'js/directives/produto.html'
+            templateUrl: BASE_HREF + '/js/directives/produto.html'
         };
 
         return ddo;

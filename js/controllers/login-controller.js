@@ -1,4 +1,4 @@
-app.controller('LoginController', ['$scope', '$location', 'ngDialog', 'BASE_HREF', function($scope, $location, ngDialog, BASE_HREF) {
+app.controller('LoginController', ['$scope', '$location', 'ngDialog', function($scope, $location, ngDialog) {
 
     $scope.logar = function() {
 
@@ -7,7 +7,7 @@ app.controller('LoginController', ['$scope', '$location', 'ngDialog', 'BASE_HREF
         } else {
             $scope.mensagem = 'Usuario ou senha incorreta';
             ngDialog.open({ 
-                template: BASE_HREF + '/templates/mensagem.html',
+                template: '/templates/mensagem.html',
                 className: 'ngdialog-theme-default mensagem-box',
                 scope: $scope
             });
